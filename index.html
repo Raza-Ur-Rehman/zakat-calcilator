@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakat Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html,
+        body {
+            background: #333;
+        }
+
+        h1 {
+            color: #13e40b;
+            font-size: 50px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Thanks for Calculate Zakat</h1>
+
+
+
+
+    <script>
+        function calculateZakat(wealth) {
+            var zakatRate = 0.025; // 2.5%
+
+            // Convert wealth to a number if it's not already.
+            wealth = Number(wealth);
+
+            if (isNaN(wealth)) {
+                z
+                return "Invalid input. Please enter a numeric value.";
+            }
+
+            var zakatDue = wealth * zakatRate;
+            return `pay your zakat: ${zakatDue.toFixed(2)}`;
+        }
+
+        // result 
+        alert(calculateZakat(prompt('enter your cash amount')));
+
+    </script>
+</body>
+
+</html>
